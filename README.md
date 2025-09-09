@@ -1,6 +1,26 @@
 # Cold Outreach CRM
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?style=flat-square&logo=github)](https://github.com/nelcode-lee/Cold_Outreach_CRM)
+[![Node.js](https://img.shields.io/badge/Node.js-16+-green?style=flat-square&logo=node.js)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18+-blue?style=flat-square&logo=react)](https://reactjs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?style=flat-square&logo=postgresql)](https://postgresql.org/)
+
 A comprehensive CRM system for cold outreach to Hull & Yorkshire businesses, built with Node.js, React, and PostgreSQL.
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/nelcode-lee/Cold_Outreach_CRM.git
+cd Cold_Outreach_CRM
+
+# Set up the project
+./setup.sh
+
+# Start the system
+cd backend && npm run dev
+cd frontend && npm start
+```
 
 ## Features
 
@@ -193,13 +213,65 @@ When making schema changes, update the `database/schema.sql` file and run it aga
 2. Run the schema: `psql -d production_db -f database/schema.sql`
 3. Update `DATABASE_URL` in production environment
 
-## Contributing
+## 📁 Repository Structure
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+```
+Cold_Outreach_CRM/
+├── backend/                 # Node.js/Express backend
+│   ├── database/           # Database schema and connection
+│   ├── models/             # Data models
+│   ├── routes/             # API routes
+│   ├── scrapers/           # Web scraping modules
+│   └── services/           # Business logic services
+├── frontend/               # React/TypeScript frontend
+│   ├── src/
+│   │   ├── components/     # React components
+│   │   └── services/       # API services
+│   └── public/             # Static assets
+├── docs/                   # Documentation files
+└── scripts/                # Utility scripts
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Fork the repository** on [GitHub](https://github.com/nelcode-lee/Cold_Outreach_CRM)
+2. **Create a feature branch**: `git checkout -b feature/your-feature-name`
+3. **Make your changes** and test thoroughly
+4. **Commit your changes**: `git commit -m "Add your feature"`
+5. **Push to your fork**: `git push origin feature/your-feature-name`
+6. **Submit a pull request** on GitHub
+
+### Development Setup
+
+```bash
+# Fork and clone the repository
+git clone https://github.com/your-username/Cold_Outreach_CRM.git
+cd Cold_Outreach_CRM
+
+# Install dependencies
+cd backend && npm install
+cd ../frontend && npm install
+
+# Set up environment variables
+cp backend/env.example backend/.env
+cp frontend/env.example frontend/.env
+
+# Start development servers
+cd backend && npm run dev
+cd frontend && npm start
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔗 Links
+
+- **Repository**: [https://github.com/nelcode-lee/Cold_Outreach_CRM](https://github.com/nelcode-lee/Cold_Outreach_CRM)
+- **Issues**: [https://github.com/nelcode-lee/Cold_Outreach_CRM/issues](https://github.com/nelcode-lee/Cold_Outreach_CRM/issues)
+- **Discussions**: [https://github.com/nelcode-lee/Cold_Outreach_CRM/discussions](https://github.com/nelcode-lee/Cold_Outreach_CRM/discussions)
 
 ## License
 
